@@ -1,5 +1,5 @@
 class MinHeap{
-    constructor(){
+        constructor(){
         this.heap = []
     }
 
@@ -41,10 +41,10 @@ class MinHeap{
         if(this.heap.length === 1) return this.heap.pop()
         
         const min = this.heap[0]
-        this.heap[0] = this.heap.pop()
+        this.heap[0] = this.heap.pop() 
         this.heapifyDown()
 
-        return min
+        return min 
     }
 
     heapifyDown(){
